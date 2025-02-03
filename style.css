@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  canvas {
+    background-color: #eaeaea;
+    border: 2px solid #ccc;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+  }
+
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+
+  button:active {
+    background-color: #3e8e41;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  /* Set up the left and right ads */
+.ads-container-left, .ads-container-right {
+    position: fixed;
+    top: 0;
+    width: 100px;
+    height: 100%; /* Full screen height */
+    z-index: 1000; /* Keep ads above other content */
+}
+
+/* Position the left ad */
+.ads-container-left {
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Position the right ad */
+.ads-container-right {
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
